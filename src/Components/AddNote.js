@@ -1,6 +1,8 @@
 import { useState } from "react";
+import uuid from "react-uuid";
 
 export default function AddNote({ handleNotes }) {
+  let unique_id = uuid();
   const [writtenNote, setWrittenNote] = useState({
     text: "",
     date: "",
@@ -9,15 +11,18 @@ export default function AddNote({ handleNotes }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    writtenNote.id = unique_id;
     handleNotes(writtenNote);
-    console.log(writtenNote);
+    setWrittenNote({ text: "", date: "", importance: "" });
   }
+
   return (
     <div>
       <form className="noteForm" onSubmit={handleSubmit}>
         <input
           placeholder="write a note!"
           className="formInputs"
+          id="myForm"
           type="text"
           name="text"
           onChange={(e) =>

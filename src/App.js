@@ -11,15 +11,25 @@ function App() {
   function handleNotes(e) {
     setAllNotes([...allNotes, e]);
 
-    console.log(allNotes);
+    // console.log(allNotes);
   }
-
+  function deleteNote(id) {
+    // console.log(id);
+    setAllNotes(allNotes.filter((x) => x.id !== id));
+  }
+  function completedNote(id) {
+    console.log(id);
+  }
   return (
     <div>
       <h1 className="title">Sticky Notes</h1>
       <SearchNotes />
       <AddNote handleNotes={handleNotes} />
-      <NotesContainer allNotes={allNotes} />
+      <NotesContainer
+        allNotes={allNotes}
+        deleteNote={deleteNote}
+        completedNote={completedNote}
+      />
     </div>
   );
 }
