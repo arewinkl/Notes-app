@@ -12,6 +12,7 @@ export default function AddNote({ handleNotes }) {
   function handleSubmit(e) {
     e.preventDefault();
     writtenNote.id = unique_id;
+    writtenNote.position = 0;
     handleNotes(writtenNote);
     setWrittenNote({ text: "", date: "", importance: "" });
   }

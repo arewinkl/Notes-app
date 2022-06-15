@@ -1,31 +1,55 @@
 import "../App.css";
 
-export default function NoteCard({ note, deleteNote, completedNote }) {
-  console.log(note);
-  return (
-    <div className="noteCard">
-      <h2>Note: {note.text}</h2>
-      <h3>Date: {note.date}</h3>
-      <h4>Level of Importance: {note.importance}</h4>
+import { useState } from "react";
 
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          deleteNote(note.id);
-        }}
-      >
-        Delete
-      </button>
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          completedNote(note.id);
-        }}
-      >
-        Completed
-      </button>
+export default function NoteCard({ note, deleteNote, completedNote }) {
+  return (
+    <div>
+      {note.position === 0 ? (
+        <div className="noteCard">
+          <h2>{note.text}</h2>
+          <h3>{note.date}</h3>
+          <h4>Importance: {note.importance}/100</h4>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              deleteNote(note.id);
+            }}
+          >
+            Delete
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              completedNote(note);
+            }}
+          >
+            Completed
+          </button>
+        </div>
+      ) : (
+        <div>
+          ` <h2>{note.text}</h2>
+          <h3>{note.date}</h3>
+          <h4>Importance: {note.importance}/100</h4>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              deleteNote(note.id);
+            }}
+          >
+            Delete
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              completedNote(note);
+            }}
+          >
+            Incompleted
+          </button>
+        </div>
+      )}
     </div>
   );
 }
-
-//Notes text, date, level of importance

@@ -5,8 +5,6 @@ export default function NotesContainer({
   deleteNote,
   completedNote,
 }) {
-  console.log(allNotes);
-
   return (
     <div>
       {allNotes.map((note, i) => (
