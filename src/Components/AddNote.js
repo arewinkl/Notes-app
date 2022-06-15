@@ -14,8 +14,10 @@ export default function AddNote({ handleNotes }) {
   }
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className="noteForm" onSubmit={handleSubmit}>
         <input
+          placeholder="write a note!"
+          className="formInputs"
           type="text"
           name="text"
           onChange={(e) =>
@@ -24,6 +26,7 @@ export default function AddNote({ handleNotes }) {
           value={writtenNote.text}
         ></input>
         <input
+          className="formInputs"
           type="date"
           name="date"
           onChange={(e) =>
@@ -32,6 +35,7 @@ export default function AddNote({ handleNotes }) {
           value={writtenNote.date}
         ></input>
         <input
+          className="formInputs"
           type="range"
           name="importance"
           onChange={(e) =>
@@ -42,7 +46,7 @@ export default function AddNote({ handleNotes }) {
           }
           value={writtenNote.importance}
         ></input>
-        <input type="submit"></input>
+        <input className="formInputs" type="submit"></input>
       </form>
     </div>
   );
