@@ -7,8 +7,8 @@ export default function NoteCard({ note, deleteNote, completedNote }) {
     <div>
       {note.position === 0 ? (
         <div className="noteCard">
-          <h2>{note.text}</h2>
-          <h3>{note.date}</h3>
+          <h2>Note: {note.text}</h2>
+          <h3>Date: {note.date}</h3>
           <h4>Importance: {note.importance}/100</h4>
           <button
             onClick={(e) => {
@@ -28,9 +28,9 @@ export default function NoteCard({ note, deleteNote, completedNote }) {
           </button>
         </div>
       ) : (
-        <div>
-          ` <h2>{note.text}</h2>
-          <h3>{note.date}</h3>
+        <div className="old-note-card">
+          ` <h2>Note: {note.text}</h2>
+          <h3>Date: {note.date}</h3>
           <h4>Importance: {note.importance}/100</h4>
           <button
             onClick={(e) => {
