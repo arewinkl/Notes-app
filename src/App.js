@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div>
+      <h1 className="title">Sticky Notes</h1>
       <SearchNotes />
       <AddNote handleNotes={handleNotes} />
       <NotesContainer allNotes={allNotes} />
