@@ -7,6 +7,10 @@ export default function NotesContainer({
 }) {
   return (
     <div>
+      <div>
+        <h1>Tasks</h1>
+        <h1>Completed Tasks</h1>
+      </div>
       {allNotes.map((note, i) => (
         <NoteCard
           key={i}
