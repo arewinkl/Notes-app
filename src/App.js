@@ -1,11 +1,12 @@
 import "./App.css";
 import { useState } from "react";
-import NoteContainer from "./Components/NotesContainer";
-import SearchBar from "./Components/SearchBar";
-import AddNote from "./Components/AddNote";
+import NoteContainer from "./components/NoteContainer";
+import AddNote from "./components/AddNote";
+import Header from "./components/Header";
 
 function App() {
   const [allNotes, setAllNotes] = useState([]);
+  const [search, setSearch] = useState("");
 
   function handleNotes(e) {
     setAllNotes([...allNotes, e]);
@@ -22,13 +23,17 @@ function App() {
     }
     setAllNotes([...allNotes]);
   }
+
+  const displayNotes = allNotes.filter((notes) =>
+    notes.text.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="App">
-      <h1 className="title"> Sticky Notes</h1>
-      <SearchBar />
+      <Header onSearch={setSearch} />
       <AddNote handleNotes={handleNotes} />
       <NoteContainer
-        allNotes={allNotes}
+        allNotes={displayNotes}
         deleteNote={deleteNote}
         completedNote={completedNote}
       />
