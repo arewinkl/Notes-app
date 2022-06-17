@@ -1,10 +1,24 @@
-import SearchBar from "./SearchBar";
+import { useState } from "react";
 
-export default function Header({ onSearch }) {
+export default function SearchBar({ onSearch }) {
+  const [search, setSearch] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    onSearch(search);
+    setSearch("");
+  }
+
   return (
-    <header>
-      <h1 className="title"> Sticky Notes</h1>
-      <SearchBar onSearch={onSearch} />
-    </header>
+    <form className="search-bar" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        id="search"
+        placeholder="search notes"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <button type="submit">🔍</button>
+    </form>
   );
 }
