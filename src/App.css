@@ -34,14 +34,14 @@
   text-align: center;
 }
 
-.searchBar {
+.search-bar {
   flex: 1 1 auto;
   margin: 0 1rem;
   display: flex;
   justify-content: center;
 }
 
-.searchBar input {
+.search-bar input {
   width: 90%;
   font-size: 1rem;
   height: 2rem;
