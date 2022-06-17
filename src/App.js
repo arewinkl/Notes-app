@@ -1,8 +1,8 @@
 import "./App.css";
 import { useState } from "react";
-import NoteContainer from "./components/NoteContainer";
-import AddNote from "./components/AddNote";
-import Header from "./components/Header";
+import NoteContainer from "./Components/NotesContainer";
+import AddNote from "./Components/AddNote";
+import Header from "./Components/Header";
 
 function App() {
   const [allNotes, setAllNotes] = useState([]);
