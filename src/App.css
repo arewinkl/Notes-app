@@ -2,48 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .title {
   text-align: center;
-  font-size: 100px;
+  font-size: 80px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: underline;
 }
 
-.noteCard {
+.note-card {
   background-color: rgb(235, 213, 17);
   margin: 20px;
   max-width: 300px;
@@ -52,20 +18,12 @@
   box-shadow: 10px 10px 10px #9e9d9d;
 }
 
-.old-note-card {
-  background-color: rgb(20, 97, 39);
-  margin: 20px;
-  max-width: 300px;
-  text-align: center;
-  height: 300px;
-  box-shadow: 10px 10px 10px #9e9d9d;
-}
-.noteForm {
+.note-form {
   margin-top: 40px;
   margin: 40px;
 }
 
-.formInputs {
+.form-inputs {
   margin: 20px;
   border: 4px solid black;
   border-radius: 20px;
@@ -74,4 +32,28 @@
   font-weight: bolder;
   height: 40px;
   text-align: center;
+}
+
+.search-bar {
+  flex: 1 1 auto;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 90%;
+  font-size: 1rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding-left: 0.5rem;
+}
+
+.search-bar button {
+  padding: 0 0.25rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
