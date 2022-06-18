@@ -3,10 +3,13 @@ import { useState } from "react";
 import NoteContainer from "./Components/NotesContainer";
 import AddNote from "./Components/AddNote";
 import Header from "./Components/Header";
+import { stockData } from "./Data";
 
 function App() {
   const [allNotes, setAllNotes] = useState([]);
   const [search, setSearch] = useState("");
+
+  console.log(stockData);
 
   function handleNotes(e) {
     setAllNotes([...allNotes, e]);
