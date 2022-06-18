@@ -8,7 +8,7 @@ export default function NotesContainer({
   return (
     <div className="task-container">
       <div className="task-titles">
-        <h1>Tasks</h1>
+        <h1>Unfinished Tasks</h1>
         <h1>Completed Tasks</h1>
       </div>
       {allNotes.map((note, i) => (

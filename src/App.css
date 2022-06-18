@@ -140,11 +140,12 @@
   justify-content: space-between;
   padding-left: 15%;
   padding-right: 15%;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
 }
 
 .task-titles h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Palatino, URW Palladio L, serif;
+  font-size: 40px;
 }
 
 .task-container {
