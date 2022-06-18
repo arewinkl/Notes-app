@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  border: tan solid 18px;
-  border-top: #bda27e solid 18px;
-  border-left: #b19876 solid 18px;
-  border-bottom: #c9ad86 solid 18px;
+  border: tan solid 22px;
+  border-top: #bda27e solid 22px;
+  border-left: #b19876 solid 22px;
+  border-bottom: #c9ad86 solid 22px;
   box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782,
     0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
-  background-color: rgb(136, 132, 132);
+  background-color: rgb(199, 193, 193);
 }
 
 .title {
@@ -73,18 +73,21 @@
   margin-right: 0.5rem;
   /* border: 1px solid #ccc; */
   border: none;
-  border-bottom: 2px solid #080808;
+  border-bottom: 4px solid #080808;
   border-radius: 3px;
   padding-left: 0.5rem;
-  background: transparent;
+  background: white;
+  border-radius: 20px;
 }
 
-.search-button {
+.searchy {
   padding: 0 0.25rem;
-  background: white;
+  background: transparent;
   /* border: 10px solid #ccc; */
+  /* height: 5rem; */
+  font-size: 30px;
   border: none;
-  border-radius: 3px;
+  /* border-radius: 20px; */
 }
 
 .task-titles {
