@@ -6,8 +6,8 @@ export default function NotesContainer({
   completedNote,
 }) {
   return (
-    <div>
-      <div>
+    <div className="task-container">
+      <div className="task-titles">
         <h1>Tasks</h1>
         <h1>Completed Tasks</h1>
       </div>
