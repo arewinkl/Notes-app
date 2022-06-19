@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 import { stockData } from "./Data";
 
 function App() {
-  const [allNotes, setAllNotes] = useState([]);
+  const [allNotes, setAllNotes] = useState(stockData);
   const [search, setSearch] = useState("");
 
   console.log(stockData);
