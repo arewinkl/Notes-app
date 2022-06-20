@@ -9,7 +9,8 @@ function App() {
   const [allNotes, setAllNotes] = useState(stockData);
   const [search, setSearch] = useState("");
 
-  console.log(stockData);
+  // console.log(stockData);
+  console.log(allNotes);
 
   function handleNotes(e) {
     setAllNotes([...allNotes, e]);

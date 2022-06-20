@@ -34,4 +34,32 @@ export const stockData = [
     position: 0,
     text: "Watch Colorado Rapids game to sign the next phenom player to star at the dog track.",
   },
+  {
+    date: "2022-07-01",
+    id: "62db7e7-0483-a7c5-2a5b-b2b6c1a0c02",
+    importance: "80",
+    position: 1,
+    text: "Purchase new footballs for the lads, to take home with them for the offseason.",
+  },
+  {
+    date: "2022-06-16",
+    id: "2f2de38-5afc-be1d-4fe-552f27a07e5",
+    importance: "98",
+    position: 0,
+    text: "Look into new sponsorship deals for the team next season, would like a sponsor that wants to invest in the new pitch as well.",
+  },
+  {
+    date: "2022-06-26",
+    id: "16ce87e-5d78-58d-f305-56b022d5587",
+    importance: "50",
+    position: 1,
+    text: "Take care of the hot dog order for the game this week, someone dropped the ball and we need that order done ASAP!!",
+  },
+  {
+    date: "2022-06-28",
+    id: "2673635-abb4-1e28-66b-864211b210c2",
+    importance: "82",
+    position: 0,
+    text: "send scouts out on their assignments to find new tallent for the next transfer window, and hire a baker to figure out what is inside those delicious biscuits!!",
+  },
 ];
