@@ -126,13 +126,20 @@
   border-radius: 20px;
   font-weight: bolder;
 }
-
+.delete-btn:hover {
+  background-color: rgb(197, 87, 87);
+  opacity: 0.8;
+}
 .completed-btn {
   margin: 20px 10px 20px 10px;
   width: 100px;
   height: 30px;
   border-radius: 20px;
   font-weight: bolder;
+}
+.completed-btn:hover {
+  background-color: rgb(105, 179, 130);
+  opacity: 0.8;
 }
 
 .incomplete-btn {
