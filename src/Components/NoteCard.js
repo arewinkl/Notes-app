@@ -11,6 +11,7 @@ export default function NoteCard({ note, deleteNote, completedNote }) {
           <h3>Date: {note.date}</h3>
           <h4>Importance: {note.importance}/100</h4>
           <button
+            className="delete-btn"
             onClick={(e) => {
               e.stopPropagation();
               deleteNote(note.id);
@@ -19,6 +20,7 @@ export default function NoteCard({ note, deleteNote, completedNote }) {
             Delete
           </button>
           <button
+            className="completed-btn"
             onClick={(e) => {
               e.stopPropagation();
               completedNote(note);
@@ -33,6 +35,7 @@ export default function NoteCard({ note, deleteNote, completedNote }) {
           <h3>Date: {note.date}</h3>
           <h4>Importance: {note.importance}/100</h4>
           <button
+            className="delete-btn"
             onClick={(e) => {
               e.stopPropagation();
               deleteNote(note.id);
@@ -41,6 +44,7 @@ export default function NoteCard({ note, deleteNote, completedNote }) {
             Delete
           </button>
           <button
+            className="incomplete-btn"
             onClick={(e) => {
               e.stopPropagation();
               completedNote(note);
