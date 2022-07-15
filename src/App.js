@@ -10,7 +10,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   // console.log(stockData);
-  console.log(allNotes);
+  // console.log(allNotes);
 
   function handleNotes(e) {
     setAllNotes([...allNotes, e]);

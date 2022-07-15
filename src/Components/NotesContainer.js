@@ -5,6 +5,7 @@ export default function NotesContainer({
   deleteNote,
   completedNote,
 }) {
+  console.log(allNotes);
   return (
     <div className="task-container">
       <div className="task-titles">
